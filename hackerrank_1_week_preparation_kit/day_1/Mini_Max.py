@@ -19,6 +19,7 @@ def miniMaxSum(arr):
     sums = []
     
     # Iterate over the array and get a combo of 4 numbers and sum them up then append to the sum to the sums array
+    # This required importing combinations from the itertools module
     for number in combinations(arr, 4):
         sums.append(sum(number))
     

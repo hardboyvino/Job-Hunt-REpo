@@ -1,4 +1,5 @@
 #!/bin/python3
+# Problem Statement - Given an array of an odd number length, find the median (the middle number) from the array. Paraphrased and not read as I rushed to submit within time without realising I had 3 minutes left
 
 import math
 import os

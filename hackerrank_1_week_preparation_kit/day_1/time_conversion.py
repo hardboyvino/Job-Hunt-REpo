@@ -19,7 +19,7 @@ def timeConversion(s):
     # The last item will be "00PM" so slice the last item to see if it is AM or PM
     meridian = s[-1][2:]
 
-    # Because the problem requires writing the answer to an output path for Unit Testing, return the result instead of my usual print
+    # Because the problem requires writing the answer to an output path for Unit Testing (I pressume), return the result instead of my usual print
     if meridian == "PM" and s[0] != "12":
         s[0] = int(s[0]) + 12
         return f"{s[0]}:{s[1]}:{s[2][:-2]}"
