@@ -2,5 +2,4 @@
 
 word = input("What is the word? ").strip()
 
-for char in reversed(word):
-    print(char, end="")
+for char in reversed(word): print(char, end="")

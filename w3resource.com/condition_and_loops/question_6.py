@@ -6,10 +6,8 @@ count_odd = 0
 count_even = 0
 
 for number in numbers:
-    if number % 2 == 0:
-        count_even += 1
-    else:
-        count_odd += 1
+    if number % 2 == 0: count_even += 1
+    else: count_odd += 1
 
 print(f"Number of even numbers: {count_even}")
 print(f"Number of odd numbers: {count_odd}")
