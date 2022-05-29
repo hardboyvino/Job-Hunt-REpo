@@ -1,18 +1,23 @@
-# Problem Statement - Write a Python program to get the frequency of the elements in a list.
+# Problem Statement - Write a Python program to count the number of elements in a list within a specified range.
 
-from collections import Counter
+list = [1, 2, 3, 4, 5 , 6] * 5
 
+# Initialise counter to zero
+counter = 0
 
-list_1 = [1, 4, 5, 3, 2, 6] * 5
+# For every element in the list
+for i in list:
 
-uniques = list(set(list_1))
+    # If the element is between the specified range
+    if 3 < i < 7:
 
-for uniques in range(len(list_1)):
-    if uniques in list_1:
-        print(list_1.count(uniques))
+        # Add to the counter
+        counter += 1
 
+# On the side, created a new list with all the numbers that will be in the counter
+range_number = sorted([num for num in list if 3 < num < 7])
 
-# Use the Counter class from collections module to automatically count all the occurences of an item in a list
-# Turn it into a dict to keep the data structure cleaner
-final = dict(Counter(sorted(list_1),))
-print(final)
+# Print both things out
+print(range_number)
+print(len(range_number))
+print(counter)
